@@ -51,7 +51,10 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-syntax-flow": "^7.24.7",
+    "@babel/plugin-transform-react-jsx": "^7.25.2",
+    "@testing-library/dom": "^10.4.0",
     "@types/sass": "^1.45.0",
-    "sass": "^1.78.0"
+    "sass": "^1.79.2"
   }
 }
