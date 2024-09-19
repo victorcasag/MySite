@@ -1,0 +1,104 @@
+.footer {
+    background-color: var(--secondary-bg-color);
+    padding: 2rem 1.3rem;
+    margin-top: 2rem;
+    border-radius: 0.938rem;
+}
+
+.footerContent {
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; // Permite que o conteúdo se ajuste em telas menores
+}
+
+.footerLeft,
+.footerRight {
+    flex: 1;
+}
+
+.footerLeft p {
+    margin: 0;
+    color: var(--text-color);
+}
+
+.footerRight {
+    display: flex;
+    flex-direction: column; // Alinha os links e ícones em coluna
+    align-items: flex-end; // Alinha os itens à direita
+
+    nav {
+        display: flex;
+        justify-content: flex-end; // Alinha os links à direita
+        margin-bottom: 1rem; // Espaço entre os links e os ícones sociais
+
+        a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin-left: 1rem;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: var(--highlight-color);
+            }
+        }
+    }
+}
+
+.socialIcons {
+    display: flex; // Alinha os ícones em linha
+    justify-content: flex-end; // Alinha os ícones sociais à direita
+    margin-left: 1rem;
+    gap: 1rem;
+    a {
+        margin-left: 0.5rem;
+        color: var(--text-color); // Cor dos ícones
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: var(--highlight-color); // Cor ao passar o mouse
+        }
+    }
+}
+
+.icon {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: var(--highlight-color);
+    }
+}
+
+@media (max-width: 768px) {
+    .footerContent {
+        flex-direction: column; // Alinha o conteúdo em coluna em telas menores
+        text-align: center; // Centraliza o texto
+    }
+
+    .footerLeft,
+    .footerRight {
+        margin-bottom: 1rem; // Espaço entre as seções
+    }
+
+    .footerRight {
+        justify-content: center; // Centraliza os links e ícones sociais
+        align-items: center;
+
+        nav {
+            justify-content: center; // Centraliza os links
+        }
+    }
+
+    .socialIcons {
+        margin-top: 1rem;
+        justify-content: center; // Centraliza os ícones sociais
+        width: 100%;
+
+        a {
+            margin: 0 0.5rem;
+        }
+    }
+}

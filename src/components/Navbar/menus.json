@@ -1,0 +1,7 @@
+[
+    {"title": "Home", "to": "/"},
+    {"title": "About", "to": "/About"},
+    {"title": "Skills", "to": "/Skills"},
+    {"title": "Projects", "to": "/projects"},
+    {"title": "Contact", "to": "/Contact"}
+]

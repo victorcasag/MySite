@@ -1,0 +1,216 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.projectsTitle {
+    font-size: 3rem;
+    color: white;
+    margin-top: 1.5rem;
+    margin-bottom: -1.25rem;
+    margin-left: 2.5rem;
+}
+
+.project {
+    background-color: var(--secondary-bg-color);
+    border-radius: var(--border-radius-large);
+    padding: 3rem;
+    color: white;
+}
+
+.projectTitle {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+    margin-left: 1.3rem;
+}
+.projectTitleGuardianKey{
+    font-size: 2rem;
+    margin-left: 3rem;
+}
+.projectTitleBudgetManagement{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+    margin-left: 0;
+}
+.projectTitleProdulink{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+    margin-left: 4.5rem;
+}
+.projectBody {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.projectImage {
+    width: 25%;  
+    max-width: 423px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.625rem;
+}
+.projectImageGuardianKey{
+    width: 25%;  
+    max-width: 423px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.625rem;
+    margin-top: 20px;
+}
+.projectDescriptionGuardianKey{
+    flex: 1;
+    margin: 0;
+    margin-left: 55px;
+    margin-right: 30px;
+    text-align: justify;
+}
+.projectDescription {
+    flex: 1;
+    margin: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 1.3rem;
+    justify-content: flex-start;
+}
+.buttonSeeProjectGuardianKey{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: var(--border-radius-small);
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: #d1e7d1;
+    }
+    margin-left: 4.5rem;
+}
+.buttonSeeProject, .buttonSeeCode {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: var(--border-radius-small);
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-left: 4.5rem;
+    &:hover {
+        background-color: #d1e7d1;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .projectsTitle {
+        font-size: 1.5rem;
+    }
+    .projectTitle {
+        font-size: 2rem;
+        margin-left: 30px;
+    }
+    .projectTitleGuardianKey{
+        font-size: 2rem;
+        margin-left: 30px;
+    }
+    .projectTitleBudgetManagement {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .projectTitleProdulink {
+        font-size: 2rem;
+        margin-left: 60px;
+    }
+    .project {
+        padding: 1rem;
+    }
+    .projectDescription {
+        flex: 1;
+        margin: 0;
+        margin-left: 0;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 768px) {
+    .projectBody {
+        flex-direction: column;
+    }
+
+    .projectImage {
+        width: 80%;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+    .projectImageGuardianKey{
+        width: 80%;  
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        max-width: 423px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 0.625rem;
+        margin-top: 80px;
+    }
+    .buttonContainer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .buttonSeeProject, .buttonSeeCode {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+    .buttonSeeProjectGuardianKey{
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 576px) { 
+    .project {
+        padding: 2rem;
+    }
+    .projectImageGuardianKey{
+        width: 24%;  
+    }
+}
+
+@media (min-width: 992px) { // Large (lg)
+    .projectImage {
+        width: 40%; 
+    }
+    .projectImageGuardianKey{
+        width: 37%;  
+    }
+}
+
+@media (min-width: 1200px) { // Extra large (xl)
+    .projectImage {
+        width: 30%; 
+    }
+    .projectImageGuardianKey{
+        width: 28%;  
+    }
+}
+
+@media (min-width: 1400px) { // Extra extra large (xxl)
+    .projectImage {
+        width: 25%; 
+    }
+    .projectImageGuardianKey{
+        width: 23%;  
+    }
+}

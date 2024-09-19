@@ -1,0 +1,55 @@
+$body-bg: #2F5D62;
+
+@import '~bootstrap/scss/bootstrap.scss';
+
+:root {
+    --primary-bg-color: #2f5d62;
+    --secondary-bg-color: #4a777b;
+    --highlight-color: rgba(255, 215, 0, 1);
+    --text-color: #ffffff;
+    --border-radius-small: 0.313rem;
+    --border-radius-large: 1.875rem;
+    --padding: 4vw;
+    --margin-left: 50px;
+    --margin-bottom: 2rem;
+    --highlight-color-hover: #0056b3;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap');
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+.container {
+    background-color: $body-bg; 
+    padding-left: 0; 
+    padding-right: 0; 
+}
+html {
+    scroll-behavior: smooth;
+}
+h1{
+    font-family: 'Space Mono', monospace;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+h2{
+    font-family: 'Space Mono', monospace;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+

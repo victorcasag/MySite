@@ -1,0 +1,92 @@
+.contact {
+    background-color: var(--secondary-bg-color);
+    padding: 2rem 1.3rem;
+    border-radius: 0.938rem;
+    margin-top: 2rem;
+}
+
+.contactContent {
+    background-color: var(--secondary-bg-color);
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--text-color);
+    text-align: left;
+
+    h2 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+    .contactForm {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .formGroup {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                margin-bottom: 0.5rem;
+                font-weight: bold;
+            }
+
+            input,
+            textarea {
+                padding: 0.5rem;
+                border: 1px solid var(--text-color);
+                border-radius: 0.5rem;
+                font-size: 1rem;
+                resize: none;
+            }
+
+            textarea {
+                min-height: 100px;
+            }
+        }
+
+        .submitButton {
+            padding: 0.75rem;
+            background-color: #ecf5ef;
+            color: black;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #d1e7d1;
+            }
+        }
+    }
+
+    .contactButtons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1.5rem;
+
+        a {
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            color: white;
+            background-color: var(--highlight-color);
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #1EBE4D;
+            }
+        }
+
+        .whatsappButton {
+            background-color: #1b9e4b; 
+        }
+
+    }
+}
