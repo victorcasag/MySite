@@ -6,6 +6,7 @@ import Footer from "../../components/Footer";
 import Skills from "../../components/Skills";
 import Projects from "../../components/Project";
 import Contact from "../../components/Contact";
+import Languages from "../../components/Languages";
 
 export default function App() {
     return (
@@ -16,6 +17,7 @@ export default function App() {
                 <About />
                 <Skills />
                 <Projects />
+                <Languages />
                 <Contact />
                 <Footer />
             </div>
