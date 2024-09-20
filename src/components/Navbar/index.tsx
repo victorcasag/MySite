@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import styles from './Navbar.module.scss';
 import { Helmet } from "react-helmet";
 
