@@ -1,5 +1,6 @@
 import styles from "./Skills.module.scss";
 import images from "./images";
+
 const skillsData = [
     { name: "Java", img: images.java },
     { name: "Android", img: images.android },

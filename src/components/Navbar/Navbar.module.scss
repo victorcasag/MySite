@@ -11,20 +11,32 @@ nav {
     font-weight: bold;
 }
 
-
 .navbar {
     text-align: center;
-    background-color: var(--secondary-bg-color);  
+    background-color: var(--secondary-bg-color);
+    
     a, .nav-link {
-      color: white !important;
-      text-decoration: none;
-  
-      &:hover {
-        color: yellow;
-      }
+        color: white !important;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: yellow;
+        }
     }
-  }
-  
+
+    .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.5);
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFF' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+}
+
 .nav-links {
     a {
         display: flex;
@@ -34,43 +46,52 @@ nav {
         margin: 0 0.625rem;
         text-decoration: none;
         font-weight: bold;
+
         &:hover {
             text-decoration: underline;
-            color: yellow; 
+            color: yellow;
         }
     }
-}
-
-/* Continuação dos seus estilos existentes */
-.title {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    font-size: clamp(16px, 4vw, 32px);
-    font-weight: bold;
 }
 
 .dropdownMenu {
     background-color: var(--secondary-bg-color);
     padding: 0.5rem;
-    width: 0;
     border-radius: 0.5rem;
+    transition: all 0.3s ease;
 }
 
 .dropdownItem {
-    color: var(--secondary-bg-color);
+    color: white;
     font-size: 13px;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s ease, color 0.3s ease;
-    width: 100%;
+    
     &:hover {
         background-color: #1a4d4f;
-        color: var(--secondary-bg-color);
+        color: var(--highlight-color);
     }
 
     & + & {
-        color: var(--secondary-bg-color);
-        background-color: var(--secondary-bg-color);
         margin-top: 0.2rem;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-links {
+        a {
+            font-size: 1rem;
+        }
+    }
+
+    .dropdownMenu {
+        padding: 0.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.5rem 1rem;
     }
 }

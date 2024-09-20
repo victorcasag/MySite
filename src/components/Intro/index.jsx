@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Intro.module.scss";
-import imgMe from "../../assets/images/eu.png"; // Adjust the path as necessary
+import imgMe from "../../assets/images/eu.png"; // Ajuste o caminho conforme necessário
 
 export default function Intro() {
     return (
-        <section id="Home" className={styles["container-sm"] + " " + styles.intro}>
+        <section id="Home" className={`${styles["container-sm"]} ${styles.intro}`}>
             <div className={styles.introContainer}>
                 <div className={styles.textContent}>
                     <h1>Victor<br />Casagrande</h1>
@@ -33,5 +33,5 @@ export default function Intro() {
                 </div>
             </div>
         </section>
-    )
+    );
 }

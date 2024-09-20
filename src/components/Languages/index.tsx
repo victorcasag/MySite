@@ -22,7 +22,13 @@ export default function Languages() {
                         <div className={`${styles.progress} ${styles.fluent}`} />
                     </div>
                 </div>
-
+                <div className={styles.language}>
+                    <img src={require('../../assets/flags/spain.png')} alt="Bandeira da Espanha" className={styles.flagIcon} />
+                    <h3 className={styles.languageTitle}>Avançado Espanhol</h3>
+                    <div className={styles.progressBar}>
+                        <div className={`${styles.progress} ${styles.advanced}`} />
+                    </div>
+                </div>
                 <div className={styles.language}>
                     <img src={require('../../assets/flags/italy.png')} alt="Bandeira da Itália" className={styles.flagIcon} />
                     <h3 className={styles.languageTitle}>Básico Italiano</h3>
@@ -31,13 +37,6 @@ export default function Languages() {
                     </div>
                 </div>
 
-                <div className={styles.language}>
-                    <img src={require('../../assets/flags/spain.png')} alt="Bandeira da Espanha" className={styles.flagIcon} />
-                    <h3 className={styles.languageTitle}>Avançado Espanhol</h3>
-                    <div className={styles.progressBar}>
-                        <div className={`${styles.progress} ${styles.advanced}`} />
-                    </div>
-                </div>
             </div>
         </article>
     );

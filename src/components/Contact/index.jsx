@@ -12,6 +12,7 @@ export default function Contact() {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
@@ -29,7 +30,7 @@ export default function Contact() {
     
             if (response.ok) {
                 alert('Mensagem enviada com sucesso!');
-                setFormData({ name: '', email: '', message: '' }); // Limpa o formulário após o envio
+                setFormData({ name: '', email: '', message: '' });
             } else {
                 alert('Falha ao enviar mensagem. Tente novamente.');
             }
@@ -38,7 +39,6 @@ export default function Contact() {
             alert('Erro ao enviar mensagem. Tente novamente.');
         }
     };
-    
 
     return (
         <section id="Contact" className={styles.contact}>

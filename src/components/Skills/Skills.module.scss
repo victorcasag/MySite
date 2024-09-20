@@ -2,6 +2,13 @@
     padding: 2rem 0;
     background-color: var(--secondary-bg-color);
     border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    }
 }
 
 .skillsTitle {
@@ -10,6 +17,19 @@
     text-align: left;
     margin-left: var(--margin-left);
     margin-bottom: var(--margin-bottom);
+    position: relative;
+    animation: fadeInDown 0.8s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .skillsContainer {
@@ -25,6 +45,12 @@
     align-items: center;
     width: 120px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
 }
 
 .skillImage {
@@ -32,14 +58,25 @@
     height: 80px;
     object-fit: contain;
     margin-bottom: 0.5rem;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 
 .skillItem p {
     color: var(--text-color);
     font-weight: bold;
     margin: 0;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: var(--highlight-color);
+    }
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
     .skillsContainer {
         gap: 1rem;

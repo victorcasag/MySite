@@ -5,14 +5,24 @@
     padding: 2vw;
     background-color: var(--secondary-bg-color);
     border-radius: var(--border-radius-large);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+    }
+
     h1, h2 {
         margin-bottom: 1vw;
     }
+
     h1 {
         font-size: 3vw;
         color: var(--text-color);
         margin-left: var(--margin-left);
     }
+
     h2 {
         font-size: 2vw;
         color: var(--highlight-color);
@@ -36,11 +46,11 @@
     max-width: 100%;
     height: auto;
     border-radius: var(--border-radius-large);
-}
+    transition: transform 0.3s ease;
 
-.buttonContainer {
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 .ButtonContact {
@@ -52,11 +62,12 @@
     margin-left: var(--margin-left);
     padding: 0.70vw 1.10vw;
     font-size: clamp(1rem, 2vw, 1.3rem);
-    transition: background-color 0.3s ease;
-}
+    transition: background-color 0.3s ease, transform 0.3s ease;
 
-.ButtonContact:hover {
-    background-color: rgba(255, 215, 0, 0.6);
+    &:hover {
+        background-color: rgba(255, 215, 0, 0.6);
+        transform: scale(1.05);
+    }
 }
 
 .socialLinks {
@@ -68,11 +79,12 @@
 
 .socialLinks a {
     color: var(--text-color);
-    transition: color 0.3s ease;
-}
+    transition: color 0.3s ease, transform 0.3s ease;
 
-.socialLinks a:hover {
-    color: black;
+    &:hover {
+        color: black;
+        transform: scale(1.1);
+    }
 }
 
 .socialIcon {
@@ -80,6 +92,7 @@
     height: 40px;
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
     .introContainer {
         flex-direction: column-reverse;
@@ -97,25 +110,12 @@
         margin-bottom: 4vw;
     }
 
-    .introContainer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 2vw;
-        background-color: var(--secondary-bg-color);
-        border-radius: var(--border-radius-large);
-        h1, h2 {
-            margin-bottom: 1vw;
-            margin-left: 10px;
-        }
-        h1 {
-            font-size: 7vw;
-            color: var(--text-color);
-        }
-        h2 {
-            font-size: 6vw;
-            color: var(--highlight-color);
-        }
+    h1 {
+        font-size: 7vw;
+    }
+
+    h2 {
+        font-size: 6vw;
     }
 
     .ButtonContact {
@@ -123,13 +123,10 @@
         max-width: 250px;
         font-size: 3vw;
         padding: 2vw 2vw;
-        margin-left: 10px;
     }
 
     .socialLinks {
         justify-content: center;
-        margin-left: 0;
-        width: 80%;
     }
 
     .socialIcon {
@@ -139,32 +136,17 @@
 }
 
 @media (max-width: 480px) {
-    .introContainer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: var(--padding);
-        background-color: var(--secondary-bg-color);
-        border-radius: var(--border-radius-large);
-        h1, h2 {
-            margin-bottom: 1vw;
-        }
-        h1 {
-            font-size: 10vw;
-            color: var(--text-color);
-            margin-left: 0;
-        }
-        h2 {
-            font-size: 9vw;
-            color: var(--highlight-color);
-            margin-left: 0;
-        }
+    h1 {
+        font-size: 10vw;
+    }
+
+    h2 {
+        font-size: 9vw;
     }
 
     .ButtonContact {
         font-size: 4.3vw;
         padding: 3vw 6vw;
-        margin-top: 10px;
     }
 
     .socialIcon {
