@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import { IMenu } from '../../types';
 import styles from './Navbar.module.scss';
+import { Helmet } from "react-helmet";
 
 export default function Navbar() {
     const [showMobile, setShowMobile] = useState(false);
@@ -16,6 +17,10 @@ export default function Navbar() {
     }, []);
 
     return (
+        <>
+        <Helmet>
+        <title>Victor Casagrande</title>
+        </Helmet>
         <nav className={classNames("navbar navbar-expand-lg", styles.navbar)}>
             <div className="container-fluid">
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -48,5 +53,6 @@ export default function Navbar() {
                 </div>
             </div>
         </nav>
+        </>
     );
 }
