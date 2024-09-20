@@ -15,7 +15,7 @@ import html from '../../assets/images/html.png';
 import css from '../../assets/images/css.png'; 
 import js from '../../assets/images/javascript.png'; 
 
-export default {
+const images = { 
   java,
   sqlServer,
   api,
@@ -33,3 +33,5 @@ export default {
   css, 
   js, 
 };
+
+export default images;

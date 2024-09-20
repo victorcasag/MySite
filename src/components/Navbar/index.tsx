@@ -1,21 +1,11 @@
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from "react";
-import { IMenu } from '../../types';
 import styles from './Navbar.module.scss';
 import { Helmet } from "react-helmet";
 
 export default function Navbar() {
     const [showMobile, setShowMobile] = useState(false);
-    const [menus, setMenus] = useState<IMenu[]>([]);
-
-    useEffect(() => {
-        import('./menus.json')
-            .then(({ default: menus }) => {
-                setMenus(menus);
-            });
-    }, []);
-
     return (
         <>
             <Helmet>
