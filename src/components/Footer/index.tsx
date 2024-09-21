@@ -1,6 +1,8 @@
 import styles from "./Footer.module.scss";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+    const { t } = useTranslation();
     return (
         <footer className={styles.footer}>
             <div className={`${styles.footerContent} container`}>
@@ -9,11 +11,11 @@ export default function Footer() {
                 </div>
                 <div className={styles.footerRight}>
                     <nav>
-                        <a href="/">Home</a>
-                        <a href="#About">Sobre</a>
-                        <a href="#Skills">Habilidades</a>
-                        <a href="#Projects">Projetos</a>
-                        <a href="#Contact">Contato</a>
+                        <a href="/">{t("Footer.home")}</a>
+                        <a href="#About">{t("Footer.about")}</a>
+                        <a href="#Skills">{t("Footer.skills")}</a>
+                        <a href="#Projects">{t("Footer.projects")}</a>
+                        <a href="#Contact">{t("Footer.contact")}</a>
                     </nav>
                     <div className={styles.socialIcons}>
                         <a href="https://www.facebook.com/victorb1ghouse/" aria-label="Facebook">

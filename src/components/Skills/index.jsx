@@ -1,6 +1,6 @@
 import styles from "./Skills.module.scss";
 import images from "./images";
-
+import { useTranslation } from "react-i18next";
 const skillsData = [
     { name: "Java", img: images.java },
     { name: "Android", img: images.android },
@@ -21,9 +21,10 @@ const skillsData = [
 ];
 
 export default function Skills() {
+    const { t } = useTranslation();
     return (
         <div id="Skills" className={`${styles.skills} container`}>
-            <h1 className={styles.skillsTitle}>Habilidades</h1>
+            <h1 className={styles.skillsTitle}>{t("Skills.title")}</h1>
             <div className={styles.skillsContainer}>
                 {skillsData.map(skill => (
                     <div className={styles.skillItem} key={skill.name}>

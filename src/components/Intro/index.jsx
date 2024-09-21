@@ -1,19 +1,20 @@
-import React from "react";
 import styles from "./Intro.module.scss";
 import imgMe from "../../assets/images/eu.png"; // Ajuste o caminho conforme necessário
+import { useTranslation } from "react-i18next"; 
 
 export default function Intro() {
+    const { t } = useTranslation();
     return (
         <section id="Home" className={`${styles["container-sm"]} ${styles.intro}`}>
             <div className={styles.introContainer}>
                 <div className={styles.textContent}>
-                    <h1>Victor<br />Casagrande</h1>
-                    <h2>Desenvolvedor<br />Back-End</h2>
+                    <h1>{t("Home.name")}</h1>
+                    <h2>{t("Home.jobTitle")}</h2>
                     <button 
                         className={`btn btn-primary mb-3 flex-fill ${styles.ButtonContact}`} 
                         onClick={() => document.getElementById('Contact').scrollIntoView({ behavior: 'smooth' })}
                     >
-                        Contate-me
+                        {t("Home.buttonContact")}
                     </button>
                     <div className={styles.socialLinks}>
                         <a href="https://github.com/victorcasag" target="_blank" rel="noopener noreferrer" aria-label="GitHub">

@@ -1,0 +1,99 @@
+{
+    "Navbar": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact",
+        "languages": "Languages",
+        "portuguese": "Portuguese",
+        "english": "English",
+        "spanish": "Spanish",
+        "italian": "Italian"
+    },
+    "Home": {
+        "name": "Victor Casagrande",
+        "jobTitle": "Back-End Developer",
+        "buttonContact": "Contact me",
+        "socialLinks": {
+            "github": "GitHub",
+            "linkedin": "LinkedIn"
+        },
+        "imageAlt": "Victor Casagrande"
+    },
+    "About": {
+        "title": "A Brief Summary",
+        "content": "I have a degree in Computer Science and I am currently studying the Full Stack Cloud Developer course at UNESC. For three years at Torrecid do Brasil, I was part of the software development team, where I was able to create projects entirely from scratch, using Visual Basic.Net, PL/SQL, C# and GIT technologies. I also worked as a DevOps, optimizing the process and ensuring the efficiency of its retention and server in all branches in the Americas. Acquire knowledge in Progress and a great deal of in-depth knowledge of program documentation in Angeloni, improving my abilities to create software documents."
+    },
+    "Skills": {
+        "title": "Skills"
+    },
+    "Projects": {
+        "title": "Projects",
+        "guardianKey": {
+            "title": "Guardian Key",
+            "description": "This project is an Android application developed as a final graduation project. The goal of the app is to increase security when accessing internet banking applications through SMS token-based authentication. After logging in or registering, the user must select banking apps, which, when accessed, will require an answer to a secret question sent via SMS. A correct answer grants access to the banking app for a limited time. In case of an incorrect answer, the exact location of the device is sent to the user via email, providing an additional layer of security.",
+            "button": "See project"
+        },
+        "produlink": {
+            "title": "Produlink",
+            "description": "This project is an ERP system developed for small retailers, designed to simplify and enhance operations such as product management, customer and supplier management, and assist in the sales process. The repository contains the source code for the main Produlink project and its integration with the RESTful API Produlink-API for database requests. Main features include product registration, allowing detailed information about products, customer management with records of names, addresses, and purchase histories, supplier management with contact information and payment terms, and a sales process that facilitates order creation, inventory control, and report generation. Technologies used include Front-end in Java Swing, Back-end in Java integrated with the Produlink-API, Docker as a container, and PostgreSQL as the database. This project is ideal for developers interested in building a customized ERP system for small retailers, offering the opportunity to enhance software development skills, work with modern technologies, and collaborate on an open-source project.",
+            "button": "See repository"
+        },
+        "budgetManagement": {
+            "title": "Budget Management",
+            "description": "This VB.NET (.NET 4.8) application facilitates the creation and management of corporate budgets. Users can create detailed budgets, including products, values, and specific company data, with the information stored in a PostgreSQL database. Upon finalizing the budget, the system automatically generates an Excel file with all the details and sends it directly to the selected printer, streamlining the physical delivery process.",
+            "button": "See repository"
+        }
+    },
+    "Languages": {
+        "title": "Languages",
+        "nativePortuguese": {
+            "title": "Native Portuguese",
+            "flagAlt": "Flag of Brazil"
+        },
+        "fluentEnglish": {
+            "title": "Fluent English",
+            "flagAlt": "Flag of USA"
+        },
+        "advancedSpanish": {
+            "title": "Advanced Spanish",
+            "flagAlt": "Flag of Spain"
+        },
+        "basicItalian": {
+            "title": "Basic Italian",
+            "flagAlt": "Flag of Italy"
+        }
+    },
+    "Contact": {
+        "title": "Contact",
+        "description": "Feel free to contact me to discuss collaboration opportunities or interesting projects.",
+        "form": {
+            "name": "Name:",
+            "email": "Email:",
+            "message": "Message:",
+            "submit": "Send",
+            "whatsapp": "Contact via WhatsApp"
+        },
+        "successMessage": "Message sent successfully!",
+        "errorMessage": "Failed to send message. Please try again.",
+        "formError": "Error sending form. Please try again."
+    },
+    "Footer": {
+        "copyright": "© 2023 Victor Casagrande",
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact",
+        "languages": "Languages",
+        "socialLinks": {
+            "facebook": "Facebook",
+            "linkedin": "LinkedIn",
+            "instagram": "Instagram",
+            "email": "Email",
+            "whatsapp": "WhatsApp",
+            "github": "GitHub"
+        }
+    }
+}

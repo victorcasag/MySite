@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './Contact.module.scss';
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+    const { t } = useTranslation();
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -29,25 +31,25 @@ export default function Contact() {
             });
     
             if (response.ok) {
-                alert('Mensagem enviada com sucesso!');
+                alert(t("Contact.form.success"));
                 setFormData({ name: '', email: '', message: '' });
             } else {
-                alert('Falha ao enviar mensagem. Tente novamente.');
+                alert(t("Contact.form.error"));
             }
         } catch (error) {
-            console.error('Erro ao enviar formulário:', error);
-            alert('Erro ao enviar mensagem. Tente novamente.');
+            console.error(t("Contact.form.error"));
+            alert(t("Contact.form.error"));
         }
     };
 
     return (
         <section id="Contact" className={styles.contact}>
             <div className={`${styles.contactContent} container`}>
-                <h2>Contato</h2>
-                <p>Entre em contato comigo para discutir oportunidades de colaboração ou projetos interessantes.</p>
+                <h2>{t("Contact.title")}</h2>
+                <p>{t("Contact.description")}</p>
                 <form onSubmit={handleSubmit} className={styles.contactForm}>
                     <div className={styles.formGroup}>
-                        <label htmlFor="name">Nome:</label>
+                        <label htmlFor="name">{t("Contact.form.name")}</label>
                         <input
                             type="text"
                             id="name"
@@ -58,7 +60,7 @@ export default function Contact() {
                         />
                     </div>
                     <div className={styles.formGroup}>
-                        <label htmlFor="email">Email:</label>
+                        <label htmlFor="email">{t("Contact.form.email")}</label>
                         <input
                             type="email"
                             id="email"
@@ -69,7 +71,7 @@ export default function Contact() {
                         />
                     </div>
                     <div className={styles.formGroup}>
-                        <label htmlFor="message">Mensagem:</label>
+                        <label htmlFor="message">{t("Contact.form.message")}</label>
                         <textarea
                             id="message"
                             name="message"
@@ -78,7 +80,7 @@ export default function Contact() {
                             required
                         />
                     </div>
-                    <button type="submit" className={styles.submitButton}>Enviar</button>
+                    <button type="submit" className={styles.submitButton}>{t("Contact.form.submit")}</button>
                 </form>
                 <div className={styles.contactButtons}>
                     <a 
@@ -87,7 +89,7 @@ export default function Contact() {
                         rel="noopener noreferrer" 
                         className={styles.whatsappButton}
                     >
-                        Contato via WhatsApp
+                        {t("Contact.form.whatsapp")}
                     </a>
                 </div>
             </div>
