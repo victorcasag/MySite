@@ -92,7 +92,6 @@
     height: 40px;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .introContainer {
         flex-direction: column-reverse;
@@ -110,12 +109,25 @@
         margin-bottom: 4vw;
     }
 
-    h1 {
-        font-size: 7vw;
-    }
-
-    h2 {
-        font-size: 6vw;
+    .introContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2vw;
+        background-color: var(--secondary-bg-color);
+        border-radius: var(--border-radius-large);
+        h1, h2 {
+            margin-bottom: 1vw;
+            margin-left: 10px;
+        }
+        h1 {
+            font-size: 7vw;
+            color: var(--text-color);
+        }
+        h2 {
+            font-size: 6vw;
+            color: var(--highlight-color);
+        }
     }
 
     .ButtonContact {
@@ -123,10 +135,13 @@
         max-width: 250px;
         font-size: 3vw;
         padding: 2vw 2vw;
+        margin-left: 10px;
     }
 
     .socialLinks {
         justify-content: center;
+        margin-left: 0;
+        width: 80%;
     }
 
     .socialIcon {
@@ -136,17 +151,32 @@
 }
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: 10vw;
-    }
-
-    h2 {
-        font-size: 9vw;
+    .introContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: var(--padding);
+        background-color: var(--secondary-bg-color);
+        border-radius: var(--border-radius-large);
+        h1, h2 {
+            margin-bottom: 1vw;
+        }
+        h1 {
+            font-size: 10vw;
+            color: var(--text-color);
+            margin-left: 0;
+        }
+        h2 {
+            font-size: 9vw;
+            color: var(--highlight-color);
+            margin-left: 0;
+        }
     }
 
     .ButtonContact {
         font-size: 4.3vw;
         padding: 3vw 6vw;
+        margin-top: 10px;
     }
 
     .socialIcon {
