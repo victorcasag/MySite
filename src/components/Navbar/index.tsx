@@ -10,6 +10,7 @@ export default function Navbar() {
         <>
             <Helmet>
                 <title>Victor Casagrande</title>
+                <meta name="description" content="Victor Casagrande's Portfolio" />
             </Helmet>
             <nav className={classNames("navbar navbar-expand-lg", styles.navbar)}>
                 <div className="container-fluid">
