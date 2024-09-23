@@ -37,7 +37,11 @@ export default function Projects() {
                     </p>
                 </div>
                 <div className={styles.buttonContainer}>
-                    <button className={styles.buttonSeeCode}>{t("Projects.produlink.button")}</button>
+                    <button className={styles.buttonSeeCode}
+                        onClick={() => window.open('https://github.com/victorcasag/Produlink', '_blank')}
+                        >
+                        {t("Projects.produlink.button")}
+                    </button>
                 </div>
             </article>
 
@@ -54,7 +58,10 @@ export default function Projects() {
                     </p>
                 </div>
                 <div className={styles.buttonContainer}>
-                    <button className={styles.buttonSeeCode}>{t("Projects.budgetManagement.button")}</button>
+                    <button className={styles.buttonSeeCode} 
+                    onClick={() => window.open('https://github.com/victorcasag/BudgetManagment', '_blank')}>
+                        {t("Projects.budgetManagement.button")}
+                    </button>
                 </div>
             </article>
         </section>
