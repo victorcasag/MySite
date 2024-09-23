@@ -33,7 +33,12 @@
         transform: translateY(0);
     }
 }
-
+.buttonText {
+    color: #ffff; // Exemplo de cor
+    font-weight: bold; // Exemplo de estilo
+    margin-top: 07px;
+    margin-left: 10px; // Espaçamento à esquerda
+}
 .project {
     background-color: var(--secondary-bg-color);
     border-radius: var(--border-radius-large);

@@ -33,7 +33,8 @@
       "guardianKey": {
           "title": "Guardian Key",
           "description": "Este proyecto es una aplicación Android desarrollada como proyecto final de graduación. El objetivo de la aplicación es aumentar la seguridad al acceder a aplicaciones de banca en línea mediante autenticación basada en tokens a través de SMS. Después de iniciar sesión o registrarse, el usuario debe seleccionar las aplicaciones bancarias, que, al ser accedidas, requerirán una respuesta a una pregunta secreta enviada por SMS. Una respuesta correcta otorga acceso a la aplicación bancaria por un tiempo limitado. En caso de una respuesta incorrecta, la ubicación exacta del dispositivo se envía al usuario por correo electrónico, proporcionando una capa adicional de seguridad.",
-          "button": "Ver proyecto"
+          "button": "Ver proyecto",
+          "soon": "Próximamente"
       },
       "produlink": {
           "title": "Produlink",

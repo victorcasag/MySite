@@ -21,6 +21,7 @@ export default function Projects() {
                 </div>
                 <div className={styles.buttonContainer}>
                     <button className={styles.buttonSeeProjectGuardianKey}>{t("Projects.guardianKey.button")}</button>
+                    <span className={styles.buttonText}>{t("Projects.guardianKey.soon")}</span>
                 </div>
             </article>
 
