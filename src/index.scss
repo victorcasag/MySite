@@ -1,6 +1,5 @@
-$body-bg: #2F5D62;
+@use '~bootstrap/scss/bootstrap.scss';
 
-@import '~bootstrap/scss/bootstrap.scss';
 
 :root {
     --primary-bg-color: #2f5d62;
@@ -15,11 +14,8 @@ $body-bg: #2F5D62;
     --highlight-color-hover: #0056b3;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap');
-@import '@fortawesome/fontawesome-free/css/all.min.css';
 .container {
-    background-color: $body-bg; 
+    background-color: var(--primary-bg-color);
     padding-left: 0; 
     padding-right: 0; 
 }

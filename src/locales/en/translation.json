@@ -23,7 +23,7 @@
     },
     "About": {
         "title": "A Brief Summary",
-        "content": "I have a degree in Computer Science and I am currently studying the Full Stack Cloud Developer course at UNESC. For three years at Torrecid do Brasil, I was part of the software development team, where I was able to create projects entirely from scratch, using Visual Basic.Net, PL/SQL, C# and GIT technologies. I also worked as a DevOps, optimizing the process and ensuring the efficiency of its retention and server in all branches in the Americas. Acquire knowledge in Progress and a great deal of in-depth knowledge of program documentation in Angeloni, improving my abilities to create software documents."
+        "content": "Bachelor's degree in Computer Science and currently pursuing three postgraduate courses: Fullstack Development for Cloud, MIT Software Engineering with Java, and MIT Software Architecture. With 5 years of experience, I have worked on the development of ERP systems, REST APIs, and projects encompassing both microservices and monoliths, as well as dealing with legacy systems. At Torrecid, I worked with Visual Basic .NET and PL/SQL, developing and maintaining internal solutions for various areas of the company. My specialty is the Java ecosystem (Java 17, Spring Boot, JPA, Hibernate, Maven), with experience in front-end development using React, HTML5, CSS3, and JavaScript. I have solid knowledge of databases, including PL/SQL (Oracle), PostgreSQL, and MongoDB. Furthermore, I have extensive experience in CI/CD environments and using tools like Kubernetes, Docker, and Quarkus for container automation and orchestration."
     },
     "Skills": {
         "title": "Skills"

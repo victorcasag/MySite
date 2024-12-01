@@ -23,7 +23,7 @@
     },
     "About": {
         "title": "Um Resumo Breve",
-        "content": "Sou formado em Ciência da Computação e atualmente cursando a pós graduação de Full Stack Cloud Developer na UNESC. Durante três anos na Torrecid do Brasil, fui parte da equipe de desenvolvimento de software, onde pude criar projetos inteiros do zero, utilizando tecnologias como Visual Basic.Net, PL/SQL, C# e GIT. Também trabalhei como DevOps, otimizando processos e garantindo a eficiência da retenção e do servidor em todas as filiais nas Américas. Adquiri conhecimento em Progress e muito conhecimento aprofundado de documentação de programas na Angeloni, aprimorando minhas habilidades na criação de documentos de software."
+        "content": "Bacharel em Ciência da Computação e atualmente cursando três pós-graduações: Desenvolvimento Fullstack para Cloud, MIT Engenharia de Software com Java, e MIT Arquitetura de Software. Com 5 anos de experiência, atuei no desenvolvimento de sistemas ERP, APIs REST e projetos que englobam tanto microsserviços quanto monólitos, além de lidar com sistemas legados. Na Torrecid, trabalhei com Visual Basic .NET e PL/SQL, desenvolvendo e mantendo soluções internas para diversas áreas da empresa. Minha especialidade é o ecossistema Java (Java 17, Spring Boot, JPA, Hibernate, Maven), com experiência em front-end utilizando React, HTML5, CSS3 e JavaScript. Tenho sólidos conhecimentos em bancos de dados, incluindo PL/SQL (Oracle), PostgreSQL e MongoDB. Além disso, possuo ampla experiência em ambientes CI/CD e no uso de ferramentas como Kubernetes, Docker e Quarkus para automação e orquestração de contêineres."
     },
     "Skills": {
         "title": "Habilidades"
